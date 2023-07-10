@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+    Header set Access-Control-Allow-Origin "https://test-recrutement1.keky.eu"
+    RewriteBase /
+        RewriteEngine On
+        RewriteRule ^(.*)$ public/$1 [L]
+    </IfModule>
+
